@@ -12,3 +12,6 @@ D:\playground\C#\Get-JokeAPi.NET\obj\Debug\net6.0\refint\Get-JokeAPi.NET.dll
 D:\playground\C#\Get-JokeAPi.NET\obj\Debug\net6.0\Get-JokeAPi.NET.pdb
 D:\playground\C#\Get-JokeAPi.NET\obj\Debug\net6.0\Get-JokeAPi.NET.genruntimeconfig.cache
 D:\playground\C#\Get-JokeAPi.NET\obj\Debug\net6.0\ref\Get-JokeAPi.NET.dll
+D:\playground\C#\Get-JokeAPi.NET\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\playground\C#\Get-JokeAPi.NET\obj\Debug\net6.0\Get-JokeAPi.NET.csproj.AssemblyReference.cache
+D:\playground\C#\Get-JokeAPi.NET\obj\Debug\net6.0\Get-JokeAPi.NET.csproj.CopyComplete

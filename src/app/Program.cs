@@ -1,41 +1,24 @@
-﻿using System;
-using System.Net;
+﻿using Get_JokeAPi.NET.src.model.DTO;
+using Get_JokeAPi.NET.src.service;
+using Newtonsoft.Json;
 using System.IO;
-using System.Collections;
-using System.Threading;
+using System.Net;
+using System.Reflection.PortableExecutable;
 
 namespace Get_JokeAPi
 {
-    class API
+    public class API
     {
-        public static String path = @"D:\playground\C#\Get-JokeAPi.NET\src\json\Raw.json";
-        public static StreamWriter writer = File.CreateText(path);
+
+        private static Composer composer = new Composer();
 
         static void Main(string[] args)
         {
+            string url = "https://candaan-api.vercel.app/api/text";
+            string path = @"D:\playground\C#\Get-JokeAPi.NET\src\json\Results.json";
 
-            string sURL;
-            sURL = "https://candaan-api.vercel.app/api/text";
-
-            WebRequest request;
-            request = WebRequest.Create(sURL);
-
-            Stream objStream;
-            objStream = request.GetResponse().GetResponseStream();
-
-            StreamReader objReader = new StreamReader(objStream);
-            API.writer.WriteLine(objReader.ReadToEnd());
-            Thread.Sleep(5000);
-            Console.WriteLine(objReader.ReadLine());
-            objStream.Close();
-
-            while(objReader != null)
-            {
-                Console.WriteLine(objReader.ReadLine());
-            }
-
-
+            composer.mix(path, url);
         }
+
     }
 }
-

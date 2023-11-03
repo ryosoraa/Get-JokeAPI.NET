@@ -8,27 +8,27 @@ namespace Get_JokeAPi.NET.src.model.DTO
 {
     public class JokesDTO
     {
-        private string status
+        public string status
         {
             get; set;
         }
 
-        private string total
+        public string total
         {
             get; set;
         }
 
-        private string end_point
+        public string end_point
         {
             get; set;
         }
 
-        private string method
+        public string method
         {
             get; set;
         }
 
-        private List<string> data
+        public List<string> data
         {
             get; set;
         }
